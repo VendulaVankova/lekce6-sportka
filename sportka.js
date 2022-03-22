@@ -25,3 +25,11 @@ for (let i = 0; i < 7; i++) {
     tazenaCisla.push(vyherniCislo);
     osudi.splice(vyherniIndex, 1);
 }
+
+
+//Výpis do HTML
+let vyherniCisla = document.querySelector('#vyherni-cisla');
+
+for (let j = 0; j < tazenaCisla.length; j++) {
+    vyherniCisla.innerHTML += '<span class="cislo">' + tazenaCisla[j] + '</span>';
+}
